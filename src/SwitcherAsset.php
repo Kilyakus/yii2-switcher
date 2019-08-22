@@ -1,7 +1,7 @@
 <?php
-namespace kilyakus\scrollbar;
+namespace kilyakus\switcher;
 
-class PerfectScrollbarAsset extends \yii\web\AssetBundle
+class SwitcherAsset extends \yii\web\AssetBundle
 {
     public function init()
     {
