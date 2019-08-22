@@ -1,0 +1,23 @@
+/* SWTICHER SVG RECAST */
+input.switch {width:24px!important;height:18px!important;opacity:0;}
+
+.switcher {margin:-7px 10px;font-family:inherit;cursor:pointer;display:inline-block;transition:-webkit-transform 0.14s ease;transition:transform 0.14s ease;transition:transform 0.14s ease,-webkit-transform 0.14s ease;
+  -webkit-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+  -webkit-transform-style:preserve-3d;
+          transform-style:preserve-3d;
+}
+.switcher label {border:0;border-color:#EFF1F4;}
+.switcher label {border-right-width:1px;border-bottom-width:1px;border-style:solid;}
+.switcher label:nth-child(3n) {border-right-width:0px;}
+.switcher label:nth-last-child(-n+3) {border-bottom-width:0px;}
+.switcher input {display:none;}
+.switcher input + div {background-color:#F0F5FD;border-radius:50%;width:22px;height:22px;margin:1px;}
+.switcher input + div svg {border-radius:50%;fill:none;stroke-width:1.6;stroke:#DBE3F0;stroke-linecap:round;stroke-linejoin:round;width:24px;height:24px;display:block;position:absolute;left:0px;top:0px;right:0px;bottom:0px;z-index:1;stroke-dashoffset:124.6;stroke-dasharray:0 162.6 133 29.6;transition:all 0.4s ease 0s;}
+.switcher input:checked + div svg {stroke:#FFF;background:#7DCA60;stroke-width:3.6;stroke-dashoffset:162.6;stroke-dasharray:0 162.6 28 134.6;transition:all 0.4s ease 0.2s;}
+
+.switcher input + div.position-relative {position:relative;float:left;margin-right:10px;top:0;right:0;}
+label .switcher {margin-left:0px;}
+
+.radio label .switcher,
+.checkbox label .switcher {margin-left:-20px;margin-right:5px;}
