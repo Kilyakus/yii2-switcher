@@ -14,6 +14,7 @@ class SwitcherAsset extends \yii\web\AssetBundle
         'js/switcher.js',
     ];
     public $depends = [
+        'yii\web\YiiAsset',
     ];
     public $jsOptions = array(
         'position' => \yii\web\View::POS_HEAD
