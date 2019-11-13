@@ -6,17 +6,14 @@ class SwitcherAsset extends \yii\web\AssetBundle
     public function init()
     {
         $this->sourcePath = __DIR__ . '/assets';
+
+        $this->js[] = 'js/switcher.js';
+        $this->css[] = 'css/switcher.css';
+
+        parent::init();
     }
-    public $css = [
-        'css/switcher.css',
+
+    public $jsOptions = [
+        'position' => \yii\web\View::POS_END
     ];
-    public $js = [
-        'js/switcher.js',
-    ];
-    public $depends = [
-        'yii\web\YiiAsset',
-    ];
-    public $jsOptions = array(
-        'position' => \yii\web\View::POS_HEAD
-    );
 }
